@@ -18,7 +18,8 @@ MODEL_HF = "nllb-200-distilled-1.3B"
 translator = ctranslate2.Translator(
     MODEL_CT2,
     device="cpu",
-    intra_threads=min(4, os.cpu_count()-1),
+    # intra_threads=min(4, os.cpu_count()-1),
+    intra_threads=4,
     inter_threads=1
 )
 
