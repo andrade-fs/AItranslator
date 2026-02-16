@@ -2,29 +2,35 @@ import asyncio
 import httpx
 import time
 import statistics
-from tabulate import tabulate # Si no la tienes: pip install tabulate
+from tabulate import tabulate
 
-# --- CONFIGURACIÓN DEL TEST ---
 URL = "http://localhost:8000/translate"
-TOTAL_REQUESTS = 30       # Número total de traducciones
-CONCURRENT_WORKERS = 4    # Peticiones simultáneas (supera tu semáforo de 2 para probar la cola)
-TIMEOUT_LIMIT = 120.0     # El 1.3B es lento, damos margen
+TOTAL_REQUESTS = 30
+CONCURRENT_WORKERS = 4
+TIMEOUT_LIMIT = 120.0
 
+# Muestras etiquetadas para el análisis
 SAMPLE_TEXTS = [
-    "El desarrollo de la inteligencia artificial requiere una ética profunda.",
-    "The quantum computing era is closer than we think for global security.",
-    "La cybersécurité est un enjeu majeur pour les entreprises modernes.",
-    "Die Energiewende ist notwendig für eine nachhaltige Zukunft."
+    # --- BLOQUE ÁRABE (Largo y Complejo) ---
+    ("AR_ORIGINAL", "على الرغم من أن العالم العربي يمتلك موارد طبيعية هائلة، إلا أن الاستثمار في رأس المال البشري والتعليم التكنولوجي يظل هو المفتاح الحقيقي."),
+    ("AR_REPEAT", "على الرغم من أن العالم العربي يمتلك موارد طبيعية هائلة، إلا أن الاستثمار في رأس المال البشري والتعليم التكنولوجي يظل هو المفتاح الحقيقي."),
+    
+    # --- BLOQUE INGLÉS (Técnico) ---
+    ("EN_ORIGINAL", "Quantum computing depends on the principles of quantum mechanics, including superposition and entanglement to process data."),
+    ("EN_REPEAT", "Quantum computing depends on the principles of quantum mechanics, including superposition and entanglement to process data."),
+    
+    # --- BLOQUE ALEMÁN (Estructura diferente) ---
+    ("DE_ORIGINAL", "Die künstliche Intelligenz wird die Art und Weise, wie wir arbeiten und kommunizieren, in den nächsten Jahren grundlegend verändern."),
+    ("DE_REPEAT", "Die künstliche Intelligenz wird die Art und Weise, wie wir arbeiten und kommunizieren, in den nächsten Jahren grundlegend verändern."),
+    
+    # --- BLOQUE FRANCÉS (Control) ---
+    ("FR_ORIGINAL", "Le développement durable est devenu une priorité absolue pour les gouvernements du monde entier face au changement climatique."),
+    ("FR_REPEAT", "Le développement durable est devenu une priorité absolue pour les gouvernements du monde entier face au changement climatique.")
 ]
-
-async def worker(client, queue, results):
-    """Función que consume tareas de la cola."""
+async def worker(client, queue, results_by_type):
     while not queue.empty():
-        text = await queue.get()
-        payload = {
-            "text": text,
-            "target_lang": "spa_Latn"
-        }
+        label, text = await queue.get()
+        payload = {"text": text, "target_lang": "spa_Latn"}
         
         start = time.perf_counter()
         try:
@@ -32,62 +38,43 @@ async def worker(client, queue, results):
             end = time.perf_counter()
             
             if response.status_code == 200:
-                results.append(end - start)
+                results_by_type[label].append(end - start)
             else:
-                results.append(f"Error {response.status_code}")
-        except Exception as e:
-            results.append("Timeout/Exception")
+                results_by_type[label].append("Error")
+        except Exception:
+            results_by_type[label].append("Timeout")
         finally:
             queue.task_done()
 
 async def run_stress_test():
-    print(f"🚀 Iniciando Test de Estrés en NLLB 1.3B")
-    print(f"📊 Configuración: {TOTAL_REQUESTS} tareas | {CONCURRENT_WORKERS} workers simultáneos")
-    print("-" * 60)
-
-    # Llenar la cola con textos aleatorios de la muestra
+    print(f"🚀 Iniciando Test Detallado por Idioma/Longitud")
+    
     queue = asyncio.Queue()
+    results_by_type = {label: [] for label, _ in SAMPLE_TEXTS}
+    
     for i in range(TOTAL_REQUESTS):
         await queue.put(SAMPLE_TEXTS[i % len(SAMPLE_TEXTS)])
 
-    results = []
-    
     async with httpx.AsyncClient() as client:
-        start_time = time.perf_counter()
-        
-        # Crear workers concurrentes
-        workers = [asyncio.create_task(worker(client, queue, results)) for _ in range(CONCURRENT_WORKERS)]
-        
-        # Esperar a que la cola se vacíe
+        start_test = time.perf_counter()
+        workers = [asyncio.create_task(worker(client, queue, results_by_type)) for _ in range(CONCURRENT_WORKERS)]
         await queue.join()
-        
-        # Cancelar workers (ya terminaron)
-        for w in workers:
-            w.cancel()
-            
-        end_time = time.perf_counter()
+        for w in workers: w.cancel()
+        end_test = time.perf_counter()
 
-    # --- PROCESAMIENTO DE MÉTRICAS ---
-    latencies = [r for r in results if isinstance(r, (float, int))]
-    errors = [r for r in results if not isinstance(r, (float, int))]
-    total_duration = end_time - start_time
-    rps = len(latencies) / total_duration
+    # --- PROCESAMIENTO DE DATOS ---
+    table_data = []
+    for label, latencies in results_by_type.items():
+        valid = [l for l in latencies if isinstance(l, float)]
+        avg = f"{statistics.mean(valid):.2f}s" if valid else "N/A"
+        max_l = f"{max(valid):.2f}s" if valid else "N/A"
+        table_data.append([label, len(valid), avg, max_l])
 
-    # Tabla de resultados
-    data = [
-        ["Métrica", "Valor"],
-        ["Tiempo Total del Test", f"{total_duration:.2f} s"],
-        ["Peticiones por Segundo (RPS)", f"{rps:.2f} req/s"],
-        ["Latencia Media", f"{statistics.mean(latencies):.2f} s" if latencies else "N/A"],
-        ["Latencia P95 (Peor caso)", f"{statistics.quantiles(latencies, n=20)[18]:.2f} s" if len(latencies) > 1 else "N/A"],
-        ["Éxitos ✅", len(latencies)],
-        ["Errores ❌", len(errors)]
-    ]
-
-    print("\n" + tabulate(data, headers="firstrow", tablefmt="fancy_grid"))
+    total_time = end_test - start_test
+    print("\n📊 DESGLOSE POR TIPO DE TEXTO:")
+    print(tabulate(table_data, headers=["Etiqueta", "Éxitos", "Latencia Media", "Latencia Máxima"], tablefmt="fancy_grid"))
+    print(f"\n⚡ RPS Global: {TOTAL_REQUESTS/total_time:.2f} req/s")
+    print(f"⏱️ Tiempo total: {total_time:.2f}s")
 
 if __name__ == "__main__":
-    try:
-        asyncio.run(run_stress_test())
-    except KeyboardInterrupt:
-        pass
+    asyncio.run(run_stress_test())
