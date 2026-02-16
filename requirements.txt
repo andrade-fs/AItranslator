@@ -1,0 +1,9 @@
+# Motor de IA y modelos
+transformers>=4.48.0
+torch>=2.6.0
+sentencepiece>=0.2.0
+
+# Servidor API
+fastapi>=0.115.0
+uvicorn>=0.30.0
+requests>=2.32.0

@@ -1,0 +1,14 @@
+# Modelos (Pesados)
+nllb-200-distilled-1.3B/
+nllb_ct2_1.3b/
+nllb_ct2_600m/
+lid.176.ftz
+
+# Python
+__pycache__/
+*.pyc
+nllb-env/
+.venv/
+
+# Otros
+.DS_Store

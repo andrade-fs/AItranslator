@@ -1,0 +1,43 @@
+[
+    
+    {
+        "source": "إن التطور المتسارع في مجال الذكاء الاصطناعي يفرض تحديات أخلاقية وتقنية تستوجب وضع أطر قانونية صارمة لضمان حماية الخصوصية ومنع التحيز في الخوارزميات التي تدير حياتنا الرقمية.",
+        "expected": "El desarrollo acelerado en el campo de la inteligencia artificial impone desafíos éticos y técnicos que requieren el establecimiento de marcos legales estrictos para garantizar la protección de la privacidad y prevenir el sesgo en los algoritmos que gestionan nuestra vida digital."
+    },
+    {
+        "source": "على الرغم من أن العالم العربي يمتلك موارد طبيعية هائلة، إلا أن الاستثمار في رأس المال البشري والتعليم التكنولوجي يظل هو المفتاح الحقيقي لتحقيق نهضة اقتصادية مستدامة وشاملة في المستقبل.",
+        "expected": "A pesar de que el mundo árabe posee enormes recursos naturales, la inversión en capital humano y educación tecnológica sigue siendo la verdadera clave para lograr un renacimiento económico sostenible e integral en el futuro."
+    },
+    {
+        "source": "Implementarea noilor reglementări europene privind protecția datelor a generat o transformare profundă în modul în care companiile gestionează informațiile sensibile ale utilizatorilor de pe platformele lor digitale.",
+        "expected": "La implementación de las nuevas regulaciones europeas sobre protección de datos ha generado una transformación profunda en la forma en que las empresas gestionan la información sensible de los usuarios en sus plataformas digitales."
+    },
+    {
+        "source": "Deși tehnologia ne-a permis să rămânem conectați indiferent de distanță, este esențial să nu neglijăm importanța interacțiunilor umane directe care definesc esența societății noastre și a bunăstării emoționale.",
+        "expected": "Aunque la tecnología nos ha permitido permanecer conectados independientemente de la distancia, es esencial no descuidar la importancia de las interacciones humanas directas que definen la esencia de nuestra sociedad y del bienestar emocional."
+    },
+    {
+        "source": "Euskararen erabilera eremu digitalera hedatzea funtsezko erronka da gure hizkuntza bizirik mantentzeko eta belaunaldi berriek teknologia berrien bidez euskara modu naturalean erabili dezaten sustatzeko.",
+        "expected": "Extender el uso del euskera al ámbito digital es un reto fundamental para mantener viva nuestra lengua y fomentar que las nuevas generaciones utilicen el euskera de forma natural a través de las nuevas tecnologías."
+    },
+    {
+        "source": "Trantsizio energetikoak exijitzen du erakunde publikoen eta enpresa pribatuen arteko lankidetza estua, klima-aldaketaren ondorioak arintzeko helburuarekin eta energia berriztagarrien aldeko apustu garbia eginez.",
+        "expected": "La transición energética exige una estrecha colaboración entre las instituciones públicas y las empresas privadas, con el objetivo de mitigar las consecuencias del cambio climático y haciendo una apuesta clara por las energías renovables."
+    },
+    {
+        "source": "Die rasante Entwicklung der Quantencomputer könnte in den kommenden Jahren die gesamte Kryptographie revolutionieren und uns dazu zwingen, unsere aktuellen Sicherheitsstandards grundlegend zu überdenken.",
+        "expected": "El rápido desarrollo de la computación cuántica podría revolucionar toda la criptografía en los próximos años y obligarnos a repensar fundamentalmente nuestros estándares de seguridad actuales."
+    },
+    {
+        "source": "Es ist zwar wahr, dass die Automatisierung viele industrielle Prozesse effizienter macht, aber wir müssen auch die sozialen Auswirkungen auf den Arbeitsmarkt und die Notwendigkeit der Umschulung von Fachkräften berücksichtigen.",
+        "expected": "Si bien es cierto que la automatización hace que muchos procesos industriales sean más eficientes, también debemos considerar el impacto social en el mercado laboral y la necesidad de la reconversión de los profesionales."
+    },
+    {
+        "source": "L'évolution des sources d'énergie renouvelables est devenue une priorité mondiale absolue pour lutter contre le réchauffement climatique et assurer l'indépendance énergétique des nations face aux crises géopolitiques.",
+        "expected": "La evolución de las fuentes de energía renovables se ha convertido en una prioridad mundial absoluta para luchar contra el calentamiento climático y asegurar la independencia energética de las naciones frente a las crisis geopolíticas."
+    },
+    {
+        "source": "Bien que la transformation numérique offre des opportunités de croissance sans précédent, elle nécessite également une vigilance accrue face aux menaces de cyberattaques qui peuvent paralyser des infrastructures critiques.",
+        "expected": "Aunque la transformación digital ofrece oportunidades de crecimiento sin precedentes, también requiere una vigilancia mayor frente a las amenazas de ciberataques que pueden paralizar infraestructuras críticas."
+    }
+]
