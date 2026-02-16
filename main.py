@@ -8,6 +8,7 @@ from pydantic import BaseModel
 from typing import Optional, List
 import re
 import time
+import psutil
 
 app = FastAPI(title="NLLB 1.3B Professional Agency API")
 
@@ -143,6 +144,25 @@ async def translate(request: TranslationRequest):
 
         except Exception as e:
             raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/health")
+async def health_check():
+    """Verifica la salud del servicio y el uso de recursos."""
+    process = psutil.Process(os.getpid())
+    mem_rss = process.memory_info().rss / (1024 * 1024)  # MB
+    
+    return {
+        "status": "healthy",
+        "model": "NLLB-200-1.3B",
+        "engine": "CTranslate2",
+        "device": "cpu",
+        "uptime_ready": True,
+        "resource_usage": {
+            "memory_física_mb": round(mem_rss, 2),
+            "cpu_threads_total": os.cpu_count(),
+            "active_tasks_semaphore": 2 - sem._value # Cuántas están procesando ahora
+        }
+    }
 
 if __name__ == "__main__":
     import uvicorn
