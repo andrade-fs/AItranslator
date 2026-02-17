@@ -1,0 +1,379 @@
+{
+    "fecha_test": "2026-02-17 10:58:26",
+    "configuracion": {
+        "modelo_evaluador": "gpt-4o-mini",
+        "api_traduccion": "http://localhost:8000/translate"
+    },
+    "lista_referencia": [
+        {
+            "id": 1,
+            "idioma": "Árabe",
+            "original": "يجب عليك تقديم طلب للحصول على تأشيرة.",
+            "esperado": "Debes presentar una solicitud para obtener una visa."
+        },
+        {
+            "id": 2,
+            "idioma": "Francés",
+            "original": "Il faut remplir un formulaire pour le permis de séjour.",
+            "esperado": "Es necesario completar un formulario para el permiso de residencia."
+        },
+        {
+            "id": 3,
+            "idioma": "Inglés",
+            "original": "You need to submit your tax return by April 15.",
+            "esperado": "Debes presentar tu declaración de impuestos antes del 15 de abril."
+        },
+        {
+            "id": 4,
+            "idioma": "Vasco",
+            "original": "Osasun asegurua lortzeko eskaera bete behar duzu.",
+            "esperado": "Debes completar la solicitud para obtener el seguro de salud."
+        },
+        {
+            "id": 5,
+            "idioma": "Árabe",
+            "original": "يجب عليك تجديد إقامتك كل عام.",
+            "esperado": "Debes renovar tu residencia cada año."
+        },
+        {
+            "id": 6,
+            "idioma": "Francés",
+            "original": "Vous devez fournir des documents justificatifs pour votre demande.",
+            "esperado": "Debes proporcionar documentos justificativos para tu solicitud."
+        },
+        {
+            "id": 7,
+            "idioma": "Inglés",
+            "original": "Make sure to have your identification ready for the appointment.",
+            "esperado": "Asegúrate de tener tu identificación lista para la cita."
+        },
+        {
+            "id": 8,
+            "idioma": "Vasco",
+            "original": "Immigrazio bulegoan hitzordua eskatu behar duzu.",
+            "esperado": "Debes solicitar una cita en la oficina de inmigración."
+        },
+        {
+            "id": 9,
+            "idioma": "Árabe",
+            "original": "يجب عليك دفع الرسوم قبل تقديم الطلب.",
+            "esperado": "Debes pagar las tarifas antes de presentar la solicitud."
+        },
+        {
+            "id": 10,
+            "idioma": "Francés",
+            "original": "Les délais de traitement peuvent varier selon les demandes.",
+            "esperado": "Los plazos de procesamiento pueden variar según las solicitudes."
+        },
+        {
+            "id": 11,
+            "idioma": "Inglés",
+            "original": "You must provide proof of income for the application.",
+            "esperado": "Debes proporcionar prueba de ingresos para la solicitud."
+        },
+        {
+            "id": 12,
+            "idioma": "Vasco",
+            "original": "Osasun txartela lortzeko prozesua hasiko da.",
+            "esperado": "El proceso para obtener la tarjeta de salud comenzará."
+        },
+        {
+            "id": 13,
+            "idioma": "Árabe",
+            "original": "يجب عليك استكمال جميع الحقول في النموذج.",
+            "esperado": "Debes completar todos los campos en el formulario."
+        },
+        {
+            "id": 14,
+            "idioma": "Francés",
+            "original": "Vous devez vérifier votre statut d'immigration régulièrement.",
+            "esperado": "Debes verificar tu estado de inmigración regularmente."
+        },
+        {
+            "id": 15,
+            "idioma": "Inglés",
+            "original": "Be prepared to answer questions about your residency.",
+            "esperado": "Prepárate para responder preguntas sobre tu residencia."
+        },
+        {
+            "id": 16,
+            "idioma": "Vasco",
+            "original": "Etxebizitzaren agiria aurkeztu beharko duzu.",
+            "esperado": "Tendrás que presentar el documento de vivienda."
+        },
+        {
+            "id": 17,
+            "idioma": "Árabe",
+            "original": "يجب عليك تقديم طلب للحصول على الجنسية.",
+            "esperado": "Debes presentar una solicitud para obtener la ciudadanía."
+        },
+        {
+            "id": 18,
+            "idioma": "Francés",
+            "original": "Il est important de suivre les étapes du processus légal.",
+            "esperado": "Es importante seguir los pasos del proceso legal."
+        },
+        {
+            "id": 19,
+            "idioma": "Inglés",
+            "original": "You must schedule a medical examination as part of the process.",
+            "esperado": "Debes programar un examen médico como parte del proceso."
+        },
+        {
+            "id": 20,
+            "idioma": "Vasco",
+            "original": "Langile baten kontratuaren kopia aurkeztu behar duzu.",
+            "esperado": "Debes presentar una copia del contrato de trabajo."
+        },
+        {
+            "id": 21,
+            "idioma": "Árabe",
+            "original": "يجب عليك تقديم شهادة طبية لتأكيد حالتك الصحية.",
+            "esperado": "Debes presentar un certificado médico para confirmar tu estado de salud."
+        },
+        {
+            "id": 22,
+            "idioma": "Francés",
+            "original": "Vous devez avoir un compte bancaire pour certaines demandes.",
+            "esperado": "Debes tener una cuenta bancaria para ciertas solicitudes."
+        },
+        {
+            "id": 23,
+            "idioma": "Inglés",
+            "original": "Ensure you have all required documents before your appointment.",
+            "esperado": "Asegúrate de tener todos los documentos requeridos antes de tu cita."
+        },
+        {
+            "id": 24,
+            "idioma": "Vasco",
+            "original": "Eskaera formala aurkeztu behar duzu.",
+            "esperado": "Debes presentar una solicitud formal."
+        },
+        {
+            "id": 25,
+            "idioma": "Árabe",
+            "original": "يجب عليك تحديث معلوماتك الشخصية بانتظام.",
+            "esperado": "Debes actualizar tu información personal regularmente."
+        },
+        {
+            "id": 26,
+            "idioma": "Francés",
+            "original": "Il est nécessaire de fournir un justificatif de domicile.",
+            "esperado": "Es necesario proporcionar un justificante de domicilio."
+        },
+        {
+            "id": 27,
+            "idioma": "Inglés",
+            "original": "You may need a sponsor for your visa application.",
+            "esperado": "Es posible que necesites un patrocinador para tu solicitud de visa."
+        },
+        {
+            "id": 28,
+            "idioma": "Vasco",
+            "original": "Gure bulegoak egunero irekita dago.",
+            "esperado": "Nuestra oficina está abierta todos los días."
+        }
+    ],
+    "resultados_tabla": [
+        {
+            "id": 1,
+            "idioma": "Árabe",
+            "obtenido": "Usted debe solicitar una visa.",
+            "score": 0.8,
+            "estado": "⚠️"
+        },
+        {
+            "id": 2,
+            "idioma": "Francés",
+            "obtenido": "Hay que rellenar un formulario para el permiso de residencia.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 3,
+            "idioma": "Inglés",
+            "obtenido": "Usted necesita presentar su declaración de impuestos antes del 15 de abril.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 4,
+            "idioma": "Vasco",
+            "obtenido": "Para obtener el seguro de salud, usted debe completar la solicitud.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 5,
+            "idioma": "Árabe",
+            "obtenido": "Debe renovar su residencia cada año.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 6,
+            "idioma": "Francés",
+            "obtenido": "Usted debe proporcionar documentos justificativos para su solicitud.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 7,
+            "idioma": "Inglés",
+            "obtenido": "Asegúrese de tener su identificación lista para la cita.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 8,
+            "idioma": "Vasco",
+            "obtenido": "Tienes que hacer una cita en la oficina de inmigración.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 9,
+            "idioma": "Árabe",
+            "obtenido": "Debes pagar las tarifas antes de hacer la solicitud.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 10,
+            "idioma": "Francés",
+            "obtenido": "Los plazos de procesamiento pueden variar según las solicitudes.",
+            "score": 1.0,
+            "estado": "✅"
+        },
+        {
+            "id": 11,
+            "idioma": "Inglés",
+            "obtenido": "Debe proporcionar una prueba de ingresos para la solicitud.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 12,
+            "idioma": "Vasco",
+            "obtenido": "El proceso para obtener una tarjeta de salud ya ha comenzado.",
+            "score": 0.7,
+            "estado": "⚠️"
+        },
+        {
+            "id": 13,
+            "idioma": "Árabe",
+            "obtenido": "Debe completar todos los campos del formulario.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 14,
+            "idioma": "Francés",
+            "obtenido": "Usted debe verificar su estado de inmigración regularmente.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 15,
+            "idioma": "Inglés",
+            "obtenido": "Esté preparado para responder preguntas sobre su residencia.",
+            "score": 0.8,
+            "estado": "⚠️"
+        },
+        {
+            "id": 16,
+            "idioma": "Vasco",
+            "obtenido": "Tendrá que presentar un documento de la vivienda.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 17,
+            "idioma": "Árabe",
+            "obtenido": "Usted debe solicitar la ciudadanía.",
+            "score": 0.8,
+            "estado": "⚠️"
+        },
+        {
+            "id": 18,
+            "idioma": "Francés",
+            "obtenido": "Es importante seguir los pasos del proceso legal.",
+            "score": 1.0,
+            "estado": "✅"
+        },
+        {
+            "id": 19,
+            "idioma": "Inglés",
+            "obtenido": "Debe programar un examen médico como parte del proceso.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 20,
+            "idioma": "Vasco",
+            "obtenido": "Debe presentar una copia del contrato de un empleado.",
+            "score": 0.8,
+            "estado": "⚠️"
+        },
+        {
+            "id": 21,
+            "idioma": "Árabe",
+            "obtenido": "Deberá presentar un certificado médico para confirmar su estado de salud.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 22,
+            "idioma": "Francés",
+            "obtenido": "Es necesario tener una cuenta bancaria para ciertas solicitudes.",
+            "score": 0.8,
+            "estado": "⚠️"
+        },
+        {
+            "id": 23,
+            "idioma": "Inglés",
+            "obtenido": "Asegúrese de tener todos los documentos requeridos antes de su cita.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 24,
+            "idioma": "Vasco",
+            "obtenido": "Tienes que presentar una apelación formal.",
+            "score": 0.7,
+            "estado": "⚠️"
+        },
+        {
+            "id": 25,
+            "idioma": "Árabe",
+            "obtenido": "Usted debe actualizar su información personal con regularidad.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 26,
+            "idioma": "Francés",
+            "obtenido": "Es necesario proporcionar una prueba de domicilio.",
+            "score": 0.9,
+            "estado": "✅"
+        },
+        {
+            "id": 27,
+            "idioma": "Inglés",
+            "obtenido": "Es posible que necesite un patrocinador para su solicitud de visa.",
+            "score": 0.8,
+            "estado": "⚠️"
+        },
+        {
+            "id": 28,
+            "idioma": "Vasco",
+            "obtenido": "Nuestras oficinas están abiertas todos los días.",
+            "score": 0.9,
+            "estado": "✅"
+        }
+    ],
+    "resumen_final": {
+        "puntuacion_media": "87.14%",
+        "total_frases": 28
+    }
+}

@@ -1,0 +1,198 @@
+[
+    {
+        "idioma": "Árabe",
+        "source": "متى يمكنني تقديم طلب للحصول على الإعانة المالية؟",
+        "esperado": "¿Cuándo puedo presentar la solicitud para la subvención financiera?",
+        "obtenido": "¿Cuándo puedo solicitar la ayuda financiera?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Francés",
+        "source": "Je dois renouveler mon titre de séjour avant la fin du mois.",
+        "esperado": "Debo renovar mi permiso de residencia antes de fin de mes.",
+        "obtenido": "Tengo que renovar mi permiso de residencia antes del final del mes.",
+        "score": 0.9
+    },
+    {
+        "idioma": "Inglés",
+        "source": "What is the deadline for submitting tax returns this year?",
+        "esperado": "¿Cuál es el plazo para presentar las declaraciones de impuestos este año?",
+        "obtenido": "¿Cuál es la fecha límite para presentar las declaraciones de impuestos este año?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Vasco",
+        "source": "Nola egin dezaket bizileku-izena lortzeko eskabidea?",
+        "esperado": "¿Cómo puedo hacer la solicitud para obtener el empadronamiento?",
+        "obtenido": "¿Cómo puedo hacer una solicitud para obtener un nombre de residencia?",
+        "score": 0.6
+    },
+    {
+        "idioma": "Árabe",
+        "source": "هل يمكنني الاعتراض على قرار الضرائب في غضون 30 يومًا؟",
+        "esperado": "¿Puedo presentar una alegación contra la decisión fiscal dentro de 30 días?",
+        "obtenido": "¿Puedo objetar la decisión fiscal dentro de los 30 días?",
+        "score": 0.8
+    },
+    {
+        "idioma": "Francés",
+        "source": "J'ai besoin d'informations sur l'assurance maladie pour les expatriés.",
+        "esperado": "Necesito información sobre el seguro de salud para expatriados.",
+        "obtenido": "Necesito información sobre el seguro de salud para expatriados.",
+        "score": 1.0
+    },
+    {
+        "idioma": "Inglés",
+        "source": "Is there a fee for applying for residency?",
+        "esperado": "¿Hay una tarifa para solicitar la residencia?",
+        "obtenido": "¿Hay una cuota para solicitar la residencia?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Vasco",
+        "source": "Zer dokumentu behar ditut lan-baimen bat lortzeko?",
+        "esperado": "¿Qué documentos necesito para obtener un permiso de trabajo?",
+        "obtenido": "¿Qué documentos necesito para obtener un permiso de trabajo?",
+        "score": 1.0
+    },
+    {
+        "idioma": "Árabe",
+        "source": "ماذا يحدث إذا تأخرت في تقديم الطلب؟",
+        "esperado": "¿Qué pasa si me retraso en presentar la solicitud?",
+        "obtenido": "¿Qué pasa si llego tarde en la solicitud?",
+        "score": 0.7
+    },
+    {
+        "idioma": "Francés",
+        "source": "Je dois fournir des preuves de mes revenus pour la demande d'aide.",
+        "esperado": "Debo proporcionar pruebas de mis ingresos para la solicitud de ayuda.",
+        "obtenido": "Tengo que proporcionar pruebas de mis ingresos para la solicitud de ayuda.",
+        "score": 0.9
+    },
+    {
+        "idioma": "Inglés",
+        "source": "Can I change my tax residence to another country?",
+        "esperado": "¿Puedo cambiar mi residencia fiscal a otro país?",
+        "obtenido": "¿Puedo cambiar mi residencia fiscal a otro país?",
+        "score": 1.0
+    },
+    {
+        "idioma": "Vasco",
+        "source": "Zer da epearen iraupena alegazioak aurkezteko?",
+        "esperado": "¿Cuál es la duración del plazo para presentar alegaciones?",
+        "obtenido": "¿Cuál es el plazo para presentar alegaciones?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Árabe",
+        "source": "هل يمكنني الحصول على المساعدة القانونية في قضايا الهجرة؟",
+        "esperado": "¿Puedo obtener ayuda legal en asuntos de inmigración?",
+        "obtenido": "¿Puedo obtener asistencia legal en asuntos de inmigración?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Francés",
+        "source": "J'ai besoin de remplir un formulaire de demande de subvention.",
+        "esperado": "Necesito completar un formulario de solicitud de subvención.",
+        "obtenido": "Necesito llenar un formulario de solicitud de subvención.",
+        "score": 0.9
+    },
+    {
+        "idioma": "Inglés",
+        "source": "What documents do I need for the health insurance application?",
+        "esperado": "¿Qué documentos necesito para la solicitud del seguro de salud?",
+        "obtenido": "¿Qué documentos necesito para la solicitud de seguro médico?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Vasco",
+        "source": "Nola egiaztatu dezaket nire erroldatze egoera?",
+        "esperado": "¿Cómo puedo verificar mi estado de empadronamiento?",
+        "obtenido": "¿Cómo puedo verificar mi estado de inscripción?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Árabe",
+        "source": "متى ينتهي موعد تقديم الطلبات للحصول على الجنسية؟",
+        "esperado": "¿Cuándo es la fecha límite para presentar solicitudes de nacionalidad?",
+        "obtenido": "¿Cuándo es la fecha límite para presentar solicitudes de ciudadanía?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Francés",
+        "source": "Je veux savoir comment contester une amende.",
+        "esperado": "Quiero saber cómo impugnar una multa.",
+        "obtenido": "Quiero saber cómo impugnar una multa.",
+        "score": 1.0
+    },
+    {
+        "idioma": "Inglés",
+        "source": "Can I appeal the tax assessment decision?",
+        "esperado": "¿Puedo apelar la decisión de la valoración fiscal?",
+        "obtenido": "¿Puedo apelar la decisión de evaluación fiscal?",
+        "score": 0.9
+    },
+    {
+        "idioma": "Vasco",
+        "source": "Zer da nire eskubidea prestazio sozialen irakurketa bat egiteko?",
+        "esperado": "¿Cuál es mi derecho a solicitar una revisión de prestaciones sociales?",
+        "obtenido": "¿Cuál es mi derecho a hacer una lectura de prestación social?",
+        "score": 0.5
+    },
+    {
+        "idioma": "Árabe",
+        "source": "هل يجب أن أذهب إلى المكتب شخصيًا لتقديم الطلب؟",
+        "esperado": "¿Debo ir a la oficina en persona para presentar la solicitud?",
+        "obtenido": "¿Tengo que ir a la oficina en persona para solicitar?",
+        "score": 0.8
+    },
+    {
+        "idioma": "Francés",
+        "source": "J'ai besoin d'une copie de mon acte de naissance pour le dossier.",
+        "esperado": "Necesito una copia de mi acta de nacimiento para el expediente.",
+        "obtenido": "Necesito una copia de mi acta de nacimiento para el expediente.",
+        "score": 1.0
+    },
+    {
+        "idioma": "Inglés",
+        "source": "What is the process for renewing my work permit?",
+        "esperado": "¿Cuál es el proceso para renovar mi permiso de trabajo?",
+        "obtenido": "¿Cuál es el proceso para renovar mi permiso de trabajo?",
+        "score": 1.0
+    },
+    {
+        "idioma": "Vasco",
+        "source": "Nola entregatu dezaket nire eskaera online?",
+        "esperado": "¿Cómo puedo enviar mi solicitud en línea?",
+        "obtenido": "¿Cómo puedo entregar mi pedido en línea?",
+        "score": 0.8
+    },
+    {
+        "idioma": "Árabe",
+        "source": "متى يمكنني استلام بطاقة الإقامة الجديدة؟",
+        "esperado": "¿Cuándo puedo recibir mi nueva tarjeta de residencia?",
+        "obtenido": "¿Cuándo puedo recibir mi nueva tarjeta de residencia?",
+        "score": 1.0
+    },
+    {
+        "idioma": "Francés",
+        "source": "Je dois faire un rendez-vous pour le renouvellement de mon passeport.",
+        "esperado": "Debo hacer una cita para la renovación de mi pasaporte.",
+        "obtenido": "Tengo que hacer una cita para la renovación de mi pasaporte.",
+        "score": 0.9
+    },
+    {
+        "idioma": "Inglés",
+        "source": "Is there any support available for unemployed citizens?",
+        "esperado": "¿Hay algún apoyo disponible para ciudadanos desempleados?",
+        "obtenido": "¿Hay algún apoyo disponible para los ciudadanos desempleados?",
+        "score": 1.0
+    },
+    {
+        "idioma": "Vasco",
+        "source": "Zer eska dezaket osasun-laguntzarako?",
+        "esperado": "¿Qué puedo solicitar para recibir asistencia sanitaria?",
+        "obtenido": "¿Qué puedo pedir para la atención médica?",
+        "score": 0.8
+    }
+]

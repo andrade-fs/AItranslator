@@ -1,0 +1,344 @@
+{
+    "fecha_test": "2026-02-17 11:05:03",
+    "tipo_test": "Resiliencia a errores de escritura (Typos)",
+    "lista_referencia": [
+        {
+            "id": 1,
+            "idioma": "francés",
+            "source": "J'ai besoin d'un certificat de résidence pour ma demande.",
+            "expected": "Necesito un certificado de residencia para mi solicitud."
+        },
+        {
+            "id": 2,
+            "idioma": "español",
+            "source": "El paer de idenitidad no es sufficente para le trámite.",
+            "expected": "El papel de identidad no es suficiente para el trámite."
+        },
+        {
+            "id": 3,
+            "idioma": "francés",
+            "source": "Je dois payer mes impots avant la date limite.",
+            "expected": "Debo pagar mis impuestos antes de la fecha límite."
+        },
+        {
+            "id": 4,
+            "idioma": "español",
+            "source": "Necesito hacer un tràmite de naturalizazión.",
+            "expected": "Necesito hacer un trámite de naturalización."
+        },
+        {
+            "id": 5,
+            "idioma": "árabe",
+            "source": "لدي مشكلة في تجديد جوازالسفر الخاص بي.",
+            "expected": "Tengo un problema para renovar mi pasaporte."
+        },
+        {
+            "id": 6,
+            "idioma": "inglés",
+            "source": "I have to subimtt my tax return by next week.",
+            "expected": "Tengo que enviar mi declaración de impuestos para la próxima semana."
+        },
+        {
+            "id": 7,
+            "idioma": "vasco",
+            "source": "Egun on, zerbitzuak eskatu nahi nituen.",
+            "expected": "Buenos días, quería solicitar servicios."
+        },
+        {
+            "id": 8,
+            "idioma": "francés",
+            "source": "Je dois renouveler mon visa de travail.",
+            "expected": "Debo renovar mi visa de trabajo."
+        },
+        {
+            "id": 9,
+            "idioma": "español",
+            "source": "El formulario de apliacación está en la página web.",
+            "expected": "El formulario de aplicación está en la página web."
+        },
+        {
+            "id": 10,
+            "idioma": "francés",
+            "source": "Je ne comprends pas ce formulaire, c'est trop compliqué.",
+            "expected": "No entiendo este formulario, es demasiado complicado."
+        },
+        {
+            "id": 11,
+            "idioma": "español",
+            "source": "¿Cuantos dias tarda el trámite de residencia?",
+            "expected": "¿Cuántos días tarda el trámite de residencia?"
+        },
+        {
+            "id": 12,
+            "idioma": "inglés",
+            "source": "I need to check my health insurence details.",
+            "expected": "Necesito verificar los detalles de mi seguro de salud."
+        },
+        {
+            "id": 13,
+            "idioma": "vasco",
+            "source": "Nire pasaportea galdu dut, zer egin behar dut?",
+            "expected": "He perdido mi pasaporte, ¿qué debo hacer?"
+        },
+        {
+            "id": 14,
+            "idioma": "árabe",
+            "source": "لطفا، أريد أن أسأل عن تأشيرة العمل.",
+            "expected": "Por favor, quiero preguntar sobre la visa de trabajo."
+        },
+        {
+            "id": 15,
+            "idioma": "francés",
+            "source": "Je dois faire une demande de carte de séjour.",
+            "expected": "Debo hacer una solicitud de tarjeta de residencia."
+        },
+        {
+            "id": 16,
+            "idioma": "español",
+            "source": "El plazo para los impots se aproxima, apurate.",
+            "expected": "El plazo para los impuestos se aproxima, apúrate."
+        },
+        {
+            "id": 17,
+            "idioma": "inglés",
+            "source": "Can you help me with my immigracion status?",
+            "expected": "¿Puedes ayudarme con mi estatus migratorio?"
+        },
+        {
+            "id": 18,
+            "idioma": "vasco",
+            "source": "Nire osasun asegurua berritu beharko dut.",
+            "expected": "Tendré que renovar mi seguro de salud."
+        },
+        {
+            "id": 19,
+            "idioma": "árabe",
+            "source": "يجب أن أملأ استمارة طلب التأشيرة.",
+            "expected": "Debo llenar el formulario de solicitud de visa."
+        },
+        {
+            "id": 20,
+            "idioma": "francés",
+            "source": "Je dois soumettre ma demande avant le 1er mai.",
+            "expected": "Debo presentar mi solicitud antes del 1 de mayo."
+        },
+        {
+            "id": 21,
+            "idioma": "español",
+            "source": "El centro de salud está abiertoo hasta las 5pm.",
+            "expected": "El centro de salud está abierto hasta las 5 p.m."
+        },
+        {
+            "id": 22,
+            "idioma": "inglés",
+            "source": "I have a problem with my residency permit.",
+            "expected": "Tengo un problema con mi permiso de residencia."
+        },
+        {
+            "id": 23,
+            "idioma": "vasco",
+            "source": "Zer dokumentu behar ditut pasaportea eskuratzeko?",
+            "expected": "¿Qué documentos necesito para obtener el pasaporte?"
+        },
+        {
+            "id": 24,
+            "idioma": "árabe",
+            "source": "لدي موعد لتجديد جواز السفر.",
+            "expected": "Tengo una cita para renovar mi pasaporte."
+        },
+        {
+            "id": 25,
+            "idioma": "francés",
+            "source": "Je dois vérifier mon statut d'immigration.",
+            "expected": "Debo verificar mi estatus migratorio."
+        },
+        {
+            "id": 26,
+            "idioma": "español",
+            "source": "Los impuestos deben ser pagados are el 30 de abril.",
+            "expected": "Los impuestos deben ser pagados antes del 30 de abril."
+        },
+        {
+            "id": 27,
+            "idioma": "inglés",
+            "source": "Can you give me information about health services?",
+            "expected": "¿Puedes darme información sobre los servicios de salud?"
+        },
+        {
+            "id": 28,
+            "idioma": "vasco",
+            "source": "Nire karta eskuratu nahi dut, zein prozesu jarraitu behar dut?",
+            "expected": "Quiero obtener mi tarjeta, ¿qué proceso debo seguir?"
+        }
+    ],
+    "resultados_tabla": [
+        {
+            "id": 1,
+            "score": 1.0,
+            "obtenido": "Necesito un certificado de residencia para mi solicitud.",
+            "estado": "✅"
+        },
+        {
+            "id": 2,
+            "score": 0.8,
+            "obtenido": "El par de identidad no es suficiente para el trámite.",
+            "estado": "⚠️"
+        },
+        {
+            "id": 3,
+            "score": 0.9,
+            "obtenido": "Tengo que pagar mis impuestos antes de la fecha límite.",
+            "estado": "✅"
+        },
+        {
+            "id": 4,
+            "score": 0.7,
+            "obtenido": "Necesito hacer un proceso de naturalización.",
+            "estado": "⚠️"
+        },
+        {
+            "id": 5,
+            "score": 1.0,
+            "obtenido": "Tengo un problema para renovar mi pasaporte.",
+            "estado": "✅"
+        },
+        {
+            "id": 6,
+            "score": 0.9,
+            "obtenido": "Tengo que presentar mi declaración de impuestos para la próxima semana.",
+            "estado": "✅"
+        },
+        {
+            "id": 7,
+            "score": 0.9,
+            "obtenido": "Buenos días, quería pedir algunos servicios.",
+            "estado": "✅"
+        },
+        {
+            "id": 8,
+            "score": 0.9,
+            "obtenido": "Tengo que renovar mi visa de trabajo.",
+            "estado": "✅"
+        },
+        {
+            "id": 9,
+            "score": 0.8,
+            "obtenido": "El formulario de solicitud está en la página web.",
+            "estado": "⚠️"
+        },
+        {
+            "id": 10,
+            "score": 1.0,
+            "obtenido": "No entiendo este formulario, es demasiado complicado.",
+            "estado": "✅"
+        },
+        {
+            "id": 11,
+            "score": 0.8,
+            "obtenido": "¿Cuántos días tarda el proceso de residencia?",
+            "estado": "⚠️"
+        },
+        {
+            "id": 12,
+            "score": 0.9,
+            "obtenido": "Necesito comprobar los detalles de mi seguro médico.",
+            "estado": "✅"
+        },
+        {
+            "id": 13,
+            "score": 1.0,
+            "obtenido": "He perdido mi pasaporte, ¿qué debo hacer?",
+            "estado": "✅"
+        },
+        {
+            "id": 14,
+            "score": 1.0,
+            "obtenido": "Por favor, quiero preguntar sobre el visado de trabajo.",
+            "estado": "✅"
+        },
+        {
+            "id": 15,
+            "score": 0.9,
+            "obtenido": "Tengo que solicitar una tarjeta de residencia.",
+            "estado": "✅"
+        },
+        {
+            "id": 16,
+            "score": 0.8,
+            "obtenido": "La fecha límite para los impuestos se acerca, apúrate.",
+            "estado": "⚠️"
+        },
+        {
+            "id": 17,
+            "score": 0.8,
+            "obtenido": "¿Puedes ayudarme con mi estado de inmigración?",
+            "estado": "⚠️"
+        },
+        {
+            "id": 18,
+            "score": 1.0,
+            "obtenido": "Tendré que renovar mi seguro médico.",
+            "estado": "✅"
+        },
+        {
+            "id": 19,
+            "score": 0.9,
+            "obtenido": "Tengo que llenar el formulario de solicitud de visa.",
+            "estado": "✅"
+        },
+        {
+            "id": 20,
+            "score": 0.9,
+            "obtenido": "Tengo que presentar mi solicitud antes del 1 de mayo.",
+            "estado": "✅"
+        },
+        {
+            "id": 21,
+            "score": 0.8,
+            "obtenido": "El centro de salud está abierto hasta las 17h.",
+            "estado": "⚠️"
+        },
+        {
+            "id": 22,
+            "score": 1.0,
+            "obtenido": "Tengo un problema con mi permiso de residencia.",
+            "estado": "✅"
+        },
+        {
+            "id": 23,
+            "score": 0.9,
+            "obtenido": "¿Qué documentos necesito para obtener un pasaporte?",
+            "estado": "✅"
+        },
+        {
+            "id": 24,
+            "score": 1.0,
+            "obtenido": "Tengo una cita para renovar mi pasaporte.",
+            "estado": "✅"
+        },
+        {
+            "id": 25,
+            "score": 0.7,
+            "obtenido": "Tengo que comprobar mi estado de inmigración.",
+            "estado": "⚠️"
+        },
+        {
+            "id": 26,
+            "score": 1.0,
+            "obtenido": "Los impuestos deben ser pagados antes del 30 de abril.",
+            "estado": "✅"
+        },
+        {
+            "id": 27,
+            "score": 0.9,
+            "obtenido": "¿Puede darme información sobre los servicios de salud?",
+            "estado": "✅"
+        },
+        {
+            "id": 28,
+            "score": 0.8,
+            "obtenido": "Quiero recuperar mi tarjeta, ¿qué proceso debo seguir?",
+            "estado": "⚠️"
+        }
+    ]
+}

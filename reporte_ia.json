@@ -1,0 +1,194 @@
+[
+    {
+        "original": "Bonjour",
+        "esperado": "Hola",
+        "obtenido": "Buenos días",
+        "score": 0.5
+    },
+    {
+        "original": "Hello",
+        "esperado": "Hola",
+        "obtenido": "Hola Buenos días",
+        "score": 0.8
+    },
+    {
+        "original": "Kaixo",
+        "esperado": "Hola",
+        "obtenido": "Kaixo es el nombre de Dios",
+        "score": 0.0
+    },
+    {
+        "original": "مرحبا",
+        "esperado": "Hola",
+        "obtenido": "Hola hola",
+        "score": 0.8
+    },
+    {
+        "original": "Merci",
+        "esperado": "Gracias",
+        "obtenido": "Gracias",
+        "score": 1.0
+    },
+    {
+        "original": "Thank you",
+        "esperado": "Gracias",
+        "obtenido": "Muchas gracias",
+        "score": 0.9
+    },
+    {
+        "original": "Eskerrik asko",
+        "esperado": "Gracias",
+        "obtenido": "Muchas gracias",
+        "score": 0.9
+    },
+    {
+        "original": "شكرا",
+        "esperado": "Gracias",
+        "obtenido": "Muchas gracias",
+        "score": 0.9
+    },
+    {
+        "original": "Au revoir",
+        "esperado": "Adiós",
+        "obtenido": "Hasta luego",
+        "score": 0.8
+    },
+    {
+        "original": "Goodbye",
+        "esperado": "Adiós",
+        "obtenido": "Hasta luego adiós",
+        "score": 0.7
+    },
+    {
+        "original": "Agur",
+        "esperado": "Adiós",
+        "obtenido": "Agur",
+        "score": 0.5
+    },
+    {
+        "original": "وداعا",
+        "esperado": "Adiós",
+        "obtenido": "Hasta luego",
+        "score": 0.8
+    },
+    {
+        "original": "S'il vous plaît",
+        "esperado": "Por favor",
+        "obtenido": "Por favor",
+        "score": 1.0
+    },
+    {
+        "original": "Please",
+        "esperado": "Por favor",
+        "obtenido": "Por favor por favor",
+        "score": 0.5
+    },
+    {
+        "original": "Mesedez",
+        "esperado": "Por favor",
+        "obtenido": "Por favor",
+        "score": 1.0
+    },
+    {
+        "original": "من فضلك",
+        "esperado": "Por favor",
+        "obtenido": "Por favor, por favor",
+        "score": 0.8
+    },
+    {
+        "original": "Comment ça va?",
+        "esperado": "¿Cómo estás?",
+        "obtenido": "¿Cómo estás?",
+        "score": 1.0
+    },
+    {
+        "original": "How are you?",
+        "esperado": "¿Cómo estás?",
+        "obtenido": "¿Cómo estás?",
+        "score": 1.0
+    },
+    {
+        "original": "Zer moduz?",
+        "esperado": "¿Cómo estás?",
+        "obtenido": "¿Cómo estás?",
+        "score": 1.0
+    },
+    {
+        "original": "كيف حالك؟",
+        "esperado": "¿Cómo estás?",
+        "obtenido": "¿Cómo estás?",
+        "score": 1.0
+    },
+    {
+        "original": "Excusez-moi",
+        "esperado": "Disculpe",
+        "obtenido": "Disculpe-me",
+        "score": 0.8
+    },
+    {
+        "original": "Excuse me",
+        "esperado": "Disculpe",
+        "obtenido": "Disculpe",
+        "score": 1.0
+    },
+    {
+        "original": "Barkatu",
+        "esperado": "Disculpe",
+        "obtenido": "Lo siento mucho",
+        "score": 0.6
+    },
+    {
+        "original": "عفوا",
+        "esperado": "Disculpe",
+        "obtenido": "Lo siento",
+        "score": 0.8
+    },
+    {
+        "original": "Je t'aime",
+        "esperado": "Te amo",
+        "obtenido": "Te quiero",
+        "score": 0.7
+    },
+    {
+        "original": "I love you",
+        "esperado": "Te amo",
+        "obtenido": "Te quiero",
+        "score": 0.7
+    },
+    {
+        "original": "Maite zaitut",
+        "esperado": "Te amo",
+        "obtenido": "Te quiero",
+        "score": 0.7
+    },
+    {
+        "original": "أحبك",
+        "esperado": "Te amo",
+        "obtenido": "Te quiero",
+        "score": 0.7
+    },
+    {
+        "original": "Ça va",
+        "esperado": "Está bien",
+        "obtenido": "Está bien",
+        "score": 1.0
+    },
+    {
+        "original": "It's okay",
+        "esperado": "Está bien",
+        "obtenido": "Está bien",
+        "score": 1.0
+    },
+    {
+        "original": "Ondo dago",
+        "esperado": "Está bien",
+        "obtenido": "Está bien",
+        "score": 1.0
+    },
+    {
+        "original": "حسنا",
+        "esperado": "Está bien",
+        "obtenido": "Está bien",
+        "score": 1.0
+    }
+]
